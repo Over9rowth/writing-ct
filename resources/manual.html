@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>文风体检台 - 用户使用说明书</title>
+  <style>
+    @page { size: A4; margin: 20mm; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #1e293b;
+      line-height: 1.6;
+      font-size: 13px;
+    }
+    h1 { font-size: 24px; color: #0f172a; border-bottom: 2px solid #0284c7; padding-bottom: 8px; margin-bottom: 16px; }
+    h2 { font-size: 16px; color: #0369a1; margin-top: 20px; margin-bottom: 8px; border-left: 4px solid #0284c7; padding-left: 8px; }
+    p { margin-bottom: 10px; }
+    ul { margin-bottom: 10px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    .box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; margin-bottom: 16px; }
+    .footer { margin-top: 30px; font-size: 11px; color: #64748b; text-align: center; border-top: 1px solid #e2e8f0; padding-top: 10px; }
+    .badge { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <h1>文风体检台 (WritingCT) v0.1.0 使用说明书</h1>
+  <p><strong>出品</strong>：Over9rowth &nbsp;|&nbsp; <strong>定位</strong>：中文文章客观CT诊断与结构度量仪</p>
+  
+  <div class="box">
+    <strong>【核心理念与观测边界】</strong><br>
+    文风体检台是一套面向创作者、公文撰写者与论文作者的客观观测仪器。它只呈现可复算的数学事实与特征标记（句子长度分布、标点停顿比、高频口头禅、重复N-gram词组），不作任何主观优劣断言。本软件 100% 本机离线运行，严禁任何网络上传。
+  </div>
+
+  <h2>一、主要功能特性</h2>
+  <ul>
+    <li><strong>智能引号感知分句</strong>：精确处理全半角叹号、问号、分号及成对双引号、括号闭合边界，不切碎对话引用。</li>
+    <li><strong>句长分布与机械节奏检测</strong>：实时计算均值、标准差与滑动窗口局部变异系数（CV），精准捕获连续等长的机械段落。</li>
+    <li><strong>高频口头禅雷达</strong>：内置 4 大类 32 种常见赘词词库，量化千字出现率并高亮标出具体出现位置。</li>
+    <li><strong>实义重复 N-gram 探针</strong>：自动提取 2~4 元汉字重复词组，内置虚词停用词过滤，直观呈现复用短语。</li>
+  </ul>
+
+  <h2>二、操作指南</h2>
+  <ul>
+    <li><strong>启动即用</strong>：打开程序后，工作台自动载入内置科技评论样本，3秒内完成全项指标体检。</li>
+    <li><strong>输入或粘贴文本</strong>：在左侧工作区粘贴待检测文章，右侧仪表盘与词频列表毫秒级实时刷新。</li>
+    <li><strong>导出数据</strong>：点击右上角「导出体检报告 (JSON)」即可获取机器可读的结构化诊断指标。</li>
+    <li><strong>导出说明书</strong>：点击「导出说明书 (PDF)」可将本手册离线留存为标准 A4 PDF 文件。</li>
+  </ul>
+
+  <h2>三、免责与限制说明</h2>
+  <p>体检台给出的“长难句警告”或“机械节奏提示”仅为统计层面的物理指标，长句与排比句在文学与专业文献中均有其特定价值，请用户结合具体文体规范综合考量。</p>
+
+  <div class="footer">
+    Copyright © 2026 Over9rowth. All Rights Reserved. 纯本机离线运行 · 保护创作隐私
+  </div>
+</body>
+</html>
